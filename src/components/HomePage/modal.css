@@ -1,0 +1,208 @@
+:root {
+  --space: 0.1em;
+  --fsizelogo: 32px;
+
+  --fcolorlightblack: #323232;
+
+  --p3tfsize: 25px;
+  --p3flspacing: 0.01em;
+  --p3tlhieght: 32px;
+
+  --fxxsmall: 0.875em;
+  --fxsmall: 1em;
+  --fsmall: 1.125em;
+  --fmid: 1.25em;
+  --flarge: 1.5em;
+  --fxxlarge: 2.625em;
+
+  --fpagetop: 2.5em;
+  --fspagetop: 0.03em;
+  --fwpagetop: 400;
+
+  --fcolorwhite: white;
+  --fcolorlightblack: #323232;
+  --fcolorlighterblack: #5e5e5e;
+  --fcoloruploadlabel: #302d2d;
+
+  --ffbebas: "Bebas Neue", cursive;
+  --ffquicksand: "Quicksand";
+  --ffroboto: "Roboto", sans-serif;
+}
+
+.ReactModal__Content {
+  padding: 0.8em !important;
+  width: 90%;
+  height: 80vh;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5em !important;
+  gap: 0.25em;
+  box-shadow: 0px 0px 20px rgba(64, 64, 64, 0.4);
+}
+
+.modal-username-section {
+  background-color: #03467a;
+  color: white;
+  padding: 1em;
+  border-radius: 0.25em;
+  font-family: var(--ffroboto);
+  font-size: var(--fsmall);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.uploadModal-close-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  scale: 2;
+  cursor: pointer;
+  display: flex;
+}
+
+hr {
+  margin-top: 0.5em;
+}
+
+.file-upload input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-upload label {
+  display: block;
+  padding: 6em 1.5em;
+  background-color: #8b8b8b;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.file-upload label:hover {
+  background-color: #979797;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.form-items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--fcoloruploadlabel);
+}
+
+.upload-form h3 {
+  font-family: var(--ffroboto);
+  font-size: var(--fsmall);
+  font-weight: 600;
+  margin-top: 1em;
+  font-size: var(--fsmall);
+  color: #444444;
+}
+
+.form-items label {
+  width: 56%;
+  font-family: var(--ffroboto);
+  font-size: var(--fxxsmall);
+}
+
+.form-items select {
+  border: none;
+}
+
+.form-items textarea {
+  width: 100%;
+}
+
+.form-textarea label {
+  width: 100%;
+}
+
+.form-textarea {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25em;
+  margin-top: 3%;
+}
+
+.form-text-inpts {
+  margin: 2% 0;
+}
+
+#estimated-value,
+#specific-area,
+#duration-of-usage {
+  border: none;
+  border-bottom: 1px solid #000000;
+  width: 60%;
+}
+
+.upload-btn {
+  display: flex;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.upload-btn button {
+  background-color: #03467a;
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.4);
+  color: white;
+  border-radius: 0.4em;
+  border: none;
+  font-family: var(--ffbebas);
+  font-size: var(--fsmall);
+  letter-spacing: 0.05em;
+  padding: 0.5em 1.5em;
+}
+
+.upload-btn button:hover {
+  box-shadow: none;
+}
+
+@media screen and (min-width: 500px) {
+  .ReactModal__Content {
+    width: 80%;
+  }
+
+  .upload-btn {
+    gap: 3.5em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ReactModal__Content {
+    width: 70%;
+    padding: 1em !important;
+  }
+
+  #estimated-value,
+  #specific-area,
+  #duration-of-usage {
+    width: 87%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .ReactModal__Content {
+    width: 35%;
+    padding: 1em !important;
+  }
+
+  .upload-btn {
+    gap: 6em;
+  }
+}

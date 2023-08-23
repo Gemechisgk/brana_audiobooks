@@ -1,0 +1,258 @@
+:root {
+  --ffbebas: "Bebas Neue", cursive;
+  --ffquicksand: "Quicksand";
+  --ffroboto: "Roboto", sans-serif;
+
+  --fxxsmall: 0.875em;
+  --fxsmall: 1em;
+  --fsmall: 1.125em;
+  --fmid: 1.25em;
+  --flarge: 1.5em;
+  --fxxlarge: 2.625em;
+}
+
+.userProfile-root {
+  height: 100%;
+  display: flex;
+}
+
+.useProfile-section {
+  width: 15%;
+  background-color: #03467a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3%;
+  gap: 2em;
+  color: white;
+}
+
+.userProfile-pic img {
+  width: 9.5em;
+  height: 9.5em;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+.userProfile-nameEmail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6em;
+  font-family: var(--ffroboto);
+}
+
+.useProfile-section button {
+  background-color: white;
+  border: none;
+  padding: 0.6em 2em;
+  border-radius: 1em;
+  color: #03467a;
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+.useProfile-section button:hover {
+  box-shadow: none;
+}
+
+/* main section starts here*/
+
+.userProfile-main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.userInfo-sec {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+  gap: 3em;
+}
+
+.userProfile-header {
+  width: 12em;
+  color: #03467a;
+  cursor: pointer;
+}
+
+.userProfile-infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding: 2em 2em;
+  border-radius: 1em;
+  box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
+}
+
+.userInfo-1,
+.userInfo-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: var(--fxsmall);
+  font-family: var(--ffroboto);
+}
+
+.userInfo-1 h2,
+.userInfo-2 h2 {
+  font-family: var(--ffroboto);
+  margin-bottom: 5%;
+  color: #03467a;
+  font-size: 2em;
+}
+
+.userProfile-editBtn {
+  align-self: center;
+}
+
+.userProfile-editBtn button {
+  background-color: #03467a;
+  border: none;
+  padding: 0.8em 3em;
+  border-radius: 1.2em;
+  color: #fff;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.15);
+}
+
+.userProfile-editBtn button:hover {
+  box-shadow: none;
+}
+
+.main-itemsList {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.mainItems-header {
+  font-family: var(--ffroboto);
+  margin-top: 5em;
+  color: #03467a;
+}
+
+.userProfile-itemList {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.user-items img {
+  width: 200px;
+  height: 250px;
+  background-color: rgb(215, 213, 213);
+}
+
+.userTransaction-sec h2 {
+  font-family: var(--ffroboto);
+  color: #03467a;
+  margin-bottom: 3%;
+}
+
+.userTransaction-table {
+  font-family: var(--ffroboto);
+  width: 90%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.userTransaction-table td,
+.userTransaction-table th {
+  padding: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.userTransaction-table th {
+  background-color: #03467a;
+  color: white;
+}
+
+.ReactModal__Content {
+  /* width: 50%; */
+  height: 75vh;
+}
+
+.personalInfo-closeBtn {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #03467a;
+  padding: 1em;
+  color: white;
+}
+
+.personalInfo-closeBtn button {
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+.password-sec {
+  display: flex;
+  justify-content: space-between;
+}
+
+.password-sec button {
+  background-color: #03467a;
+  color: white;
+  padding: 0.2em 1em;
+  border: none;
+}
+
+.personal-info-edit {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.personal-info-edit-1,
+.address-info-edit {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.personal-infoPartOne,
+.personal-infoPartTwo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.personal-infoPartOne input,
+.personal-infoPartTwo input {
+  width: 100%;
+  padding: 0.6em;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.personal-infoPartOne input:focus,
+.personal-infoPartTwo input:focus {
+  outline: none;
+}
+
+.infoEdit-btns {
+  display: flex;
+  gap: 2em;
+}
+
+.infoEdit-btns button,
+.accountInfo-editBtns button {
+  background-color: #03467a;
+  color: white;
+  width: 7em;
+  padding: 1em 1.5em;
+  border: none;
+  border-radius: 1em;
+}

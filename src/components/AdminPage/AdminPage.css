@@ -1,0 +1,587 @@
+:root {
+  --ffbebas: "Bebas Neue", cursive;
+  --ffquicksand: "Quicksand";
+  --ffroboto: "Roboto", sans-serif;
+
+  --fxxsmall: 0.875em;
+  --fxsmall: 1em;
+  --fsmall: 1.125em;
+  --fmid: 1.25em;
+  --flarge: 1.5em;
+  --fxxlarge: 2.625em;
+}
+
+.adminDeliveryRequests-root {
+  display: flex;
+  flex-direction: column;
+}
+
+.adminPage-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.adminPage-logo {
+  width: 2.5em;
+}
+
+.adminPage-sidebar-logo {
+  margin-top: 5%;
+}
+
+.admin-sideBar {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  transform: translatex(-110%);
+  width: 70%;
+  background-color: #03467a;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-Links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-sideBar.open {
+  transform: translateX(0);
+}
+
+.admin-sideBar ul {
+  width: 100%;
+  margin-left: 20%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 15%;
+}
+
+.admin-sideBar a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--ffroboto);
+  font-size: var(--fxxsmall);
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  height: 40px;
+  padding: 1em 1em;
+}
+
+.admin-sideBar a:hover,
+.admin-sideBar a:focus {
+  background-color: #ffffff;
+  color: #03467a;
+  border-radius: 0.25em 0 0 0.25em;
+}
+
+.fab {
+  color: #03467a;
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.fab:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.admin-notification-profile {
+  display: flex;
+  gap: 1.5em;
+}
+
+.admin-notification-profile button {
+  color: #03467a;
+  background: transparent;
+  border: none;
+}
+
+.notification-profile {
+  scale: 1.8;
+}
+
+.adminNotificationModalOne-root {
+  position: absolute;
+  right: 1em;
+  top: 3em;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+  margin: 0 1em;
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  z-index: 1;
+}
+
+.adminNotificationModalOne-list li {
+  list-style: none;
+  padding: 0.6em;
+  border-bottom: 1px solid #03467a;
+}
+
+.adminNotificationModalOne-root li:last-child {
+  border: none;
+}
+
+/* search bar starts here */
+
+.adminSeachbar {
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+}
+
+.adminSeachbar input {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #d4cbcb;
+  border-radius: 0.5em;
+  align-self: center;
+}
+
+.adminSeachbar input::placeholder {
+  font-size: var(--fmid);
+  color: #c3c1c1;
+}
+
+.adminsearch-btn {
+  scale: 1.5;
+  position: absolute;
+  right: 2rem;
+  top: 6.8em;
+  background-color: transparent;
+  border: none;
+  color: #03467a;
+}
+
+/* dashboard starts here */
+
+.adminDashboard-root {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-card {
+  background-color: #ffffff;
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.15);
+  margin: 0 1em;
+  color: #03467a;
+  border-radius: 0.25em;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
+}
+
+.time {
+  background-color: #f9f9f9;
+  padding: 0.5em;
+  border: 1px solid #c3c1c1;
+  border-radius: 0.25em;
+}
+
+.deliveryItem-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.deliveryItem-card {
+  flex: 1;
+  display: flex;
+  margin: 1.5em 1em;
+  padding: 1em 0.2em;
+  gap: 1em;
+  align-items: center;
+  height: 10em;
+  box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.15);
+  border: 1px solid rgb(228, 225, 225);
+}
+
+.deliveryItem-card img {
+  width: 7em;
+  height: 7em;
+}
+
+.item-img-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+
+.item-img-side h3 {
+  font-family: var(--ffbebas);
+  color: #444444;
+  letter-spacing: 0.1em;
+}
+
+.item-img-side span {
+  font-family: var(--ffroboto);
+}
+
+.itemcard-btns {
+  display: flex;
+  gap: 1em;
+}
+
+.itemCard-btn {
+  width: 6em;
+  border-radius: 2em;
+  height: 2em;
+  outline: none;
+  border: none;
+  color: white;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.view-btn {
+  background-color: #31c719;
+}
+
+.forward-btn {
+  background-color: #03467a;
+}
+
+/* Manage account starts here */
+
+.manage-accounts-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  gap: 2em;
+}
+
+.manage-acc-table-btn {
+  display: flex;
+  gap: 2em;
+}
+
+.manage-acc-table-btn button {
+  border: none;
+  background: none;
+  color: #03467a;
+  font-family: var(--ffroboto);
+}
+
+.manage-acc-inside-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.edit-delete-btn {
+  border: none;
+  padding: 0.5em;
+  border-radius: 0.8em;
+  color: #03467a;
+  width: 5em;
+}
+
+.manage-acc-mid {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.create-agent button {
+  color: #03467a;
+  border: none;
+  background: transparent;
+  scale: 1.5;
+}
+
+.user-acc-section {
+  width: 100%;
+}
+
+.agent-acc-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.manage-acc-mid {
+  display: flex;
+}
+
+.manage-acc-mid select {
+  padding: 0.2em;
+  border-radius: 0.5em;
+}
+
+.manage-account-table {
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.manage-account-table .action {
+  text-align: center;
+  color: #03467a;
+}
+
+.manage-account-table th,
+.manage-account-table td {
+  text-align: left;
+  padding: 0.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.manage-account-table th {
+  color: #444444;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.agentEditModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.agentEdit-modal-content {
+  background-color: white;
+  padding: 1em;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.agentEdit-modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.closeEditAgent {
+  align-self: flex-end;
+  scale: 2;
+  cursor: pointer;
+}
+
+.agentEdit-modal-btns {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+.agentEdit-modal-btns button {
+  width: 6em;
+  background-color: #03467a;
+  color: white;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: none;
+}
+.manage-acc-table-btn button:focus {
+  border-bottom: 2px solid #31c719;
+  border-radius: 0.5em;
+}
+
+@media screen and (min-width: 500px) {
+  .admin-sideBar {
+    width: 55%;
+  }
+
+  .deliveryItem-cards {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .deliveryItem-card {
+    flex: 1;
+    height: 17em;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 0.2em;
+    padding: 1em;
+    margin: 1em 0.5em;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .item-img-side {
+    gap: 0.7em;
+  }
+
+  .manage-account-table .action {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .admin-sideBar {
+    width: 40%;
+  }
+
+  .deliveryItem-card {
+    height: 20em;
+    margin: 2% 2%;
+  }
+
+  .deliveryItem-card img {
+    width: 8em;
+    height: 8em;
+  }
+
+  .itemcard-btns {
+    margin-top: 5%;
+    gap: 2em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .admin-sideBar {
+    width: 30%;
+  }
+
+  .manage-acc-inside-btns {
+    flex-direction: row;
+  }
+
+  .manage-account-table {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .admin-notification-profile {
+    gap: 2.5em;
+  }
+
+  .dashboard-card {
+    width: 68%;
+    align-self: center;
+  }
+
+  .adminSeachbar input {
+    width: 70%;
+  }
+
+  .adminSeachbar button {
+    right: 15em;
+  }
+
+  .dashbaord-card {
+    width: 67%;
+    align-self: center;
+    justify-content: center;
+    height: 7em;
+  }
+
+  .deliveryItem-card {
+    margin: 2% 2%;
+  }
+
+  .admin-sideBar {
+    width: 25%;
+  }
+
+  .manage-account-table {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adminPage-sidebar-logo img {
+    width: 2.5em;
+  }
+  .admin-sideBar {
+    width: 10%;
+  }
+
+  .admin-sideBar ul {
+    margin-left: 0;
+    margin-top: 65%;
+  }
+
+  .admin-sideBar a {
+    font-size: 25px;
+  }
+
+  .admin-sideBar a:hover,
+  .admin-sideBar a:focus {
+    border-radius: 0.15em;
+  }
+
+  .dashboard-card {
+    width: 60%;
+  }
+
+  .time {
+    width: 50%;
+    align-self: center;
+  }
+
+  .adminSeachbar input {
+    width: 60%;
+  }
+
+  .adminSeachbar button {
+    right: 22%;
+  }
+
+  .deliveryItem-card {
+    margin: 1% 1%;
+  }
+
+  .manage-account-table {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .admin-sideBar {
+    width: 6%;
+    transform: translatex(0);
+  }
+
+  .deliveryItem-cards {
+    margin-left: 6%;
+  }
+
+  .dashboard-card {
+    width: 59%;
+  }
+
+  .time {
+    width: 30%;
+  }
+
+  .manage-account-table {
+    width: 60%;
+  }
+}
