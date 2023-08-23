@@ -11,11 +11,11 @@ function Footer() {
     <div className="footer-root">
       <div className="footer-left">
         <div className="footer-logo">
-          <img src={footerLogo} alt="Lewach logo" />
+          <img src={footerLogo} alt="QusaQus logo" />
         </div>
         <div className="footer-text">
           <p>
-            Lewach is an items exchange website that users can exchange their
+            QusaQus is an items exchange website that users can exchange their
             used items with each other. for more read about us section
           </p>
           <div className="footer-social-icons">
@@ -64,7 +64,7 @@ function Footer() {
           <a href="/" className="terms-privacy">
             Privacy Policy |
           </a>
-          @2023 Lewach. All Rights Reserved
+          @2023 QusaQus. All Rights Reserved
         </span>
       </div>
     </div>

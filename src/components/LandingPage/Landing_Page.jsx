@@ -1,4 +1,4 @@
-import sideimage from "../../assets/images/sideimage.png";
+import sideimage from "../../assets/images/landingsofa.png";
 import Header from "./Header";
 import React from "react";
 
@@ -14,8 +14,8 @@ function Landing_Page()
         <div className="body-center">
           <div className="landing-body-text">
             <p className="landing-body-text-first">
-              <span className="green-span">SWAP</span> AND SHOP - FIND YOUR
-              PERFECT <span className="green-span">MATCH!</span>
+              <span className="green-span">SELL</span> AND BUY - FIND YOUR
+              PERFECT <span className="green-span">DELIVERY!</span>
             </p>
             <p className="landing-body-text-second">
               Trade your treasures, find new pleasures - Exchange with ease on
@@ -26,7 +26,7 @@ function Landing_Page()
             </button>
           </div>
           <div className="landing-body-images">
-            <img src={sideimage} width="600px" />
+            <img src={landingsofa} width="600px" />
           </div>
         </div>
       </div>

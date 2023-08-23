@@ -1,2 +1,2 @@
-# Lewach Exchange Platform
+# QusaQus Exchange Platform
 # qusaqus

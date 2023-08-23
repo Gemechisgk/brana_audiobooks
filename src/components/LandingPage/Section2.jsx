@@ -34,7 +34,7 @@ function Section2() {
   return (
     <div name="why-lewach" className="page3-cards">
       <div>
-        <h2>WHY LEWACH</h2>
+        <h2>WHY QusaQus</h2>
       </div>
       <div
         className="page3-card card-1 fade-in"
@@ -57,7 +57,7 @@ function Section2() {
         <div className="page3-text">
           <h2>Connect with your community</h2>
           <p>
-            Lewach helps with you connect with your local community by
+            QusaQus helps with you connect with your local community by
             exchanging items with people nearby. Support small businesses and
             meet new people without leaving the comfort of your own home
           </p>
@@ -72,7 +72,7 @@ function Section2() {
           <h2>REDUCE WASTE</h2>
           <p>
             By exchanging items with others, you can reduce waste and help the
-            environment. Lewach encourages sustainability and supports the
+            environment. QusaQus encourages sustainability and supports the
             sharing economy.
           </p>
         </div>

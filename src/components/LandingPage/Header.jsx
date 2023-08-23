@@ -21,7 +21,7 @@ const Header = () => {
     <header className="header">
       <div className="logo logo-section">
         <img src={logo} />
-        <h2> LEWACH</h2>
+        <h2 className="LogotextAqua"> Qusa</h2> <h2 className="LogotextPink">Qus</h2>
       </div>
       <nav className={`nav ${showNav ? "show-nav" : ""}`}>
         <ul className="nav-links">
